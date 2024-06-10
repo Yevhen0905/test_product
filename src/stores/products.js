@@ -7,7 +7,7 @@ export const useProductsStore = defineStore('products', {
   actions: {
     async fetchProducts() {
       try {
-        const res = await fetch('/test_product/products.json')
+        const res = await fetch('./products.json')
         const data = await res.json()
         this.products = data
         console.log(this.products)
