@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <h2 class="mb-2">Orders / {{ orders.length }}</h2>
+    <h2 class="title order_title mb-4">Orders / {{ orders.length }}</h2>
     <div class="orders_wrapper">
       <div :class="['products', { hidden: selectedOrder }]">
         <OrderItem
@@ -71,5 +71,9 @@ onMounted(() => {
 
 .order_details_wrapper {
   width: 53%;
+}
+
+.order_title {
+  margin: 0 auto;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="view">
     <div class="filter">
-      <h2>Products / {{ products.length }}</h2>
+      <h2 class="title">Products / {{ products.length }}</h2>
       <select
         class="filter_select form-select"
         aria-label="Default select example"
@@ -43,6 +43,7 @@ onMounted(productsStore.fetchProducts)
 <style scoped lang="scss">
 .filter {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
