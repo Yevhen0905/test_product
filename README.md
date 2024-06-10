@@ -1,6 +1,8 @@
 # test_products
 
 This template should help get you started developing with Vue 3 in Vite.
+Data is retrieved from the local files products.json and orders.json using the Fetch API. 
+Used by Pinia as a global state management library.
 
 ## Recommended IDE Setup
 
