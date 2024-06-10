@@ -10,7 +10,7 @@ export const useOrdersStore = defineStore('orders', {
     async fetchOrder() {
       const productsStore = useProductsStore()
       try {
-        const res = await fetch('./orders.json')
+        const res = await fetch('/test_product/orders.json')
         const data = await res.json()
         ;(this.orders = data.map((order) => ({
           ...order,
