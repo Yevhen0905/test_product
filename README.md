@@ -1,7 +1,7 @@
 # test_products
 
 This template should help get you started developing with Vue 3 in Vite.
-Data is retrieved from the local files products.json and orders.json using the Fetch API. 
+Data is retrieved from the local files products.json and orders.json using the Fetch API. They are stored in the public folder of the project root.
 Used by Pinia as a global state management library.
 
 ## Recommended IDE Setup
@@ -35,4 +35,5 @@ npm run build
 ```sh
 npm run lint
 ```
+
 # test_product
