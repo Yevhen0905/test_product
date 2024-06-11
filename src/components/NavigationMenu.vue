@@ -4,7 +4,7 @@
       <img src="../assets/img/images.jpg" class="menu_img" alt="..." />
     </div>
     <nav class="nav">
-      <RouterLink class="nav_item" to="/products">Products</RouterLink>
+      <RouterLink class="nav_item" to="/">Products</RouterLink>
       <RouterLink class="nav_item" to="/orders">Orders</RouterLink>
     </nav>
   </div>

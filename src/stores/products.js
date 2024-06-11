@@ -10,7 +10,6 @@ export const useProductsStore = defineStore('products', {
         const res = await fetch('./products.json')
         const data = await res.json()
         this.products = data
-        console.log(this.products)
       } catch (e) {
         console.error(e)
       }

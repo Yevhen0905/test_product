@@ -12,13 +12,12 @@ export const useOrdersStore = defineStore('orders', {
       try {
         const res = await fetch('./orders.json')
         const data = await res.json()
-        ;(this.orders = data.map((order) => ({
+        this.orders = data.map((order) => ({
           ...order,
           get products() {
             return productsStore.products.filter((product) => product.order === order.id)
           }
-        }))),
-          console.log(this.orders)
+        }))
       } catch (e) {
         console.error(e)
       }

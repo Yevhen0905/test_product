@@ -3,13 +3,12 @@ import Orders from '../views/Orders.vue'
 import Products from '../views/Products.vue'
 
 const routes = [
-  { path: '/orders', component: Orders },
-  { path: '/products', component: Products },
-  { path: '/', redirect: '/products' }
+  { path: '/', component: Products },
+  { path: '/orders', component: Orders }
 ]
 
 const router = createRouter({
-  history: createWebHistory('/test_product'),
+  history: createWebHistory('/test_product/'),
   routes
 })
 
