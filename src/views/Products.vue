@@ -11,7 +11,7 @@
         <option v-for="type in types" :key="type" :value="type">{{ type }}</option>
       </select>
     </div>
-    <div class="products">
+    <div class="products" v-auto-animate>
       <ProductItem v-for="product in filteredProducts" :key="product.id" :product="product" />
     </div>
   </div>

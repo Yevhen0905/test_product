@@ -2,7 +2,7 @@
   <div class="view">
     <h2 class="title order_title mb-4">Orders / {{ orders.length }}</h2>
     <div class="orders_wrapper">
-      <div :class="['products', { hidden: selectedOrder }]">
+      <div :class="['products', { hidden: selectedOrder }]" v-auto-animate>
         <OrderItem
           v-for="order in orders"
           :key="order.id"
@@ -12,7 +12,7 @@
           @detail-order="showDetails"
         />
       </div>
-      <div v-if="selectedOrder" class="order_details_wrapper">
+      <div v-if="selectedOrder" class="order_details_wrapper" v-auto-animate>
         <OrderDetails
           v-if="selectedOrder"
           :selectedOrder="selectedOrder"
@@ -71,6 +71,7 @@ onMounted(() => {
 
 .order_details_wrapper {
   width: 53%;
+  transition: all 0.3s ease;
 }
 
 .order_title {

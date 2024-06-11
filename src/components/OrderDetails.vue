@@ -5,7 +5,7 @@
       <li class="list_item" v-for="product in selectedOrder.products" :key="product.id">
         <p>{{ product.title }}</p>
         <div>
-            <span class="bold">Price:</span>
+          <span class="bold">Price:</span>
           <p class="order_details_size">
             {{ product.price[0].value }} {{ product.price[0].symbol }}
           </p>
@@ -31,11 +31,12 @@ const closeDetails = () => {
 
 <style scoped>
 .order_details {
-    position: relative;
+  position: relative;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
+  transition: all 0.3s ease;
 }
 
 .order_details_title {

@@ -57,11 +57,13 @@ const closeModal = () => {
   top: 50%;
   transform: translateY(-50%);
   background: rgb(21 20 20 / 46%);
+  transition: all 0.3s ease;
 }
 
 .modal-dialog {
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.3s ease;
 
   @media only screen and (max-width: 930px) {
     top: 10%;

@@ -52,6 +52,7 @@ import { RouterLink } from 'vue-router'
   margin: 0 auto;
   font-size: 25px;
   position: relative;
+  transition: all 0.3s ease;
 
   &::before {
     content: '';

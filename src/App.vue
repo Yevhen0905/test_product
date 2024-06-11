@@ -3,7 +3,9 @@
   <div class="hero">
     <NavigationMenu />
     <div class="main">
-      <RouterView />
+      <transition v-auto-animate>
+        <RouterView />
+      </transition>
       <OrderDeleteModal />
     </div>
   </div>
@@ -15,6 +17,7 @@ import { RouterView } from 'vue-router'
 import TopMenu from './components/TopMenu.vue'
 import NavigationMenu from './components/NavigationMenu.vue'
 import OrderDeleteModal from './components/OrderDeleteModal.vue'
+import { Transition } from 'vue'
 </script>
 
 <style scoped>
@@ -33,5 +36,12 @@ import OrderDeleteModal from './components/OrderDeleteModal.vue'
   position: relative;
   width: 100%;
   padding: 40px 10px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
