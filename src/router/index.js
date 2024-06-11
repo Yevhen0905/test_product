@@ -8,7 +8,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/test_product/'),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 })
 
